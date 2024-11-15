@@ -7,7 +7,7 @@ const app=express()
 app.use(cors())
 app.use(express.json())
 connectDB()
-const PORT=process.env.PORT||4000
+const PORT=process.env.PORT
 
 app.use("/api/auth",require("./Routes/authRoutes"))
 app.use("/api/cars",require("./Routes/carRoutes"))
